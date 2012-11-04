@@ -32,7 +32,7 @@ public class CallHandler {
   
     public CallHandler()
     {
-        ArrayList<Employee> fresherList = new ArrayList(NUM_FRESH ) ; // 5 new freshers LIST
+        ArrayList<Employee> fresherList = new ArrayList(NUM_FRESH ) ; // 10 new freshers LIST
         for ( int i =0 ; i < NUM_FRESH ; i ++ )
         {
             fresherList.add(new Fresher());
