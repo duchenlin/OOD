@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Machine {
     public ArrayList<person> personList = new ArrayList<person>() ;
     public int MachineID ;
+	public int machineID;
     
     public Machine(int id)
     {

@@ -49,7 +49,30 @@ public class person {
         }
         return temp ;
     }
-    
+    public person LookUpFriends(int ID, int machineID) // give a userID, machineID look for friend
+    {
+        for(Machine m : server.machineList)
+        {       
+            if (m.machineID == machineID) 
+            {
+                for(person p : m.personList)
+                {
+                    if (p.PID== ID)
+                        return p;
+                }
+            }   
+        }
+        return null ;
+    }
+    public Machine LookUpMachine(int machineID) // given a machineID to look for machine 
+    {
+          for(Machine m : server.machineList)
+          {
+              if (m.machineID == machineID)
+                  return m ;
+          }   
+          return null ;
+    }
 
 
 }
